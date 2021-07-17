@@ -1,0 +1,21 @@
+<ion-row>
+  <ion-col>
+    <ion-slides [options]="{initialSlide:1,speed:200}">
+      <ion-slide>
+        <ion-card>
+          <ion-card-content>
+            <p style="text-align: center;">{{pokemon?.dexEntry[0]}}</p>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-content>
+            <p style="text-align: center;">{{pokemon?.dexEntry[1]}}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-col>
+</ion-row>

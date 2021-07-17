@@ -1,5 +1,7 @@
 {
-  "name": "next-calculator",
-  "integrations": {},
+  "name": "pokedex",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

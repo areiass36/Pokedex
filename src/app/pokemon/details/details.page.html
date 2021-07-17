@@ -1,0 +1,23 @@
+<ion-header mode="md">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="'/pokemon'"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{pokemon?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <app-img-profile *ngIf="pokemon!=null" [pokemon]="pokemon"></app-img-profile>
+    <ion-row>
+      <ion-col>
+        <h1 style="text-align: center;">{{pokemon?.id}}# {{pokemon?.name}}</h1>
+      </ion-col>
+    </ion-row>
+    <app-type [pokemon]="pokemon"></app-type>
+    <app-entry-slide [pokemon]="pokemon"></app-entry-slide>
+    <app-stats [pokemon]="pokemon"></app-stats>
+  </ion-grid>
+
+</ion-content>

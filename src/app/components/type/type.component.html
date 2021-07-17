@@ -1,0 +1,11 @@
+<ion-row>
+  <ion-col size="12">
+      <ion-badge *ngFor="let type of pokemon?.type" [ngClass]="getCssClass(type)">
+        {{type}}
+      </ion-badge>
+  </ion-col>
+</ion-row>
+
+
+
+

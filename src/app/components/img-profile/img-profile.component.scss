@@ -1,0 +1,21 @@
+#pokemonImg{
+  height: 80%;
+  width: 80%;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round{
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 3px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

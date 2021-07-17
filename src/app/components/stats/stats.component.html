@@ -1,0 +1,14 @@
+<ion-row>
+  <ion-col size="12">
+    <ion-list class="list">
+      <div class="flex" *ngFor="let stat of pokemon?.stats">
+        <ion-badge slot="start" color="danger">
+          {{stat.name}}
+        </ion-badge>
+        <ion-label>
+          {{stat.value}}
+        </ion-label>
+      </div>
+    </ion-list>
+    </ion-col>
+</ion-row>
